@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;700&display=swap');
+
+:root{
+
+    --primary:#0a58ca;
+    --dark:#21252f;
+    --body:#888;
+    --box-shadow: 0 8px 22px rgba(0,0,0,0.1);
+}
+
+body{
+ 
+    font-family: sora,"sans-serif";
+    line-height: 1.7;
+    color: var(--body);
+}
+
+
+h1,h2,h3,h4,h5,h6,
+.display-4{
+
+    font-weight: 500;
+     color: var( --dark);
+
+}
+
+a{
+    color: var( --dark);
+    text-decoration: none;
+}
+
+.navbar{
+
+    box-shadow: var(--box-shadow);
+}
+
+
+.navbar .nav-link{
+
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.btn{
+
+
+    border-radius: 0px;
+    border-width: 2px;
+}
+
+
+.hero{
+
+      background-image: url(bgimge.jpg);
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+      position: relative;
+      z-index: 2;
+
+}
+
+.hero::after{
+
+
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+    top: 0px;
+    bottom: 0px ;
+    z-index: -1;
+    background-color: rgba(21, 20, 51, 0.658);   
+}
+
+section{
+
+   padding-top:130px;
+   padding-bottom: 130px;
+
+}
+
+
+.card-effect{
+
+    background-color:white;
+    box-shadow: var(--box-shadow);
+    padding: 25px;
+    /* transition: all 0.35s ease; */
+}
+
+.card::hover{
+ 
+box-shadow: none;
+/* transform: translateY(5px); */
+
+}
+
+
+.iconbox{
+
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    color: white;
+    font-size: 32px;
+    background-color: var(--primary);
+    border-radius: 100px;
+    flex: none;
+}
+
+
+
+.project{
+
+    position:relative;
+    overflow: hidden;
+}
+
+.overlay{
+
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 20, 51, 0.658);   
+    display: flex;
+    align-items: flex-end;
+    padding: 30px;
+    transition: all 0.4s ease;
+    opacity: 0;
+}
+
+
+.project img{
+
+    transition: all 0.4s ease;
+
+}
+
+.project:hover .overlay{
+
+    opacity: 1;
+}
+
+.project:hover img{
+
+     transform: scale(1.1);
+
+}
+
+.form-control{
+
+    border: none;
+    background-color: rgba(0,0,0,0.02);
+
+}
+
+
+.footer-top{
+
+    padding-bottom: 90px;
+    padding: 90px;
+    background-color: var(--dark);
+
+}
+
+.footer-top a{
+    color: var(--body);
+}
+
+
+.logo a{
+
+    font-weight: 700;
+    font-size: 25px;
+    width: 160px;
+    color: white;
+}
+
+
+
+
+.footer-top a:hover{
+    color: white;
+}
+
+
+.footer-bottom{
+    background-color: #272b38;
+}
+
+
+
+
+.footer-bottom a {
+
+    font-size: 26px;
+    color: white;
+    font-weight: 900;
+
+}
+/* 
+.social-icons a{
+
+
+    justify-content: flex-end;
+} */
+
+
+.footer-bottom .social-icons a:hover{
+
+    color: white;
+} 
